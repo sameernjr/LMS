@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
     EduCare LMS
@@ -8,7 +9,7 @@
 <h1>Index HTML</h1>
 <div class="card-container">
     <div class="card">
-        <img src="" alt="Country Flag" srcset="">
+        <img src="{% static 'my_app/flags/USA.png' %}" alt="Country Flag" srcset="">
         <div class="card-content">
             <h1>USA</h1>
             <p>Courses will be Available soon, so just hang on tight.</p>
@@ -16,7 +17,7 @@
         </div>
     </div>
     <div class="card">
-        <img src="#" alt="Country Flag" srcset="">
+        <img src="{% static 'my_app/flags/Canada.png' %}" alt="Country Flag" srcset="">
         <div class="card-content">
             <h1>Canada</h1>
             <p>Courses will be Available soon, so just hang on tight.</p>
@@ -24,7 +25,7 @@
         </div>
     </div>
     <div class="card">
-        <img src="#" alt="Country Flag" srcset="">
+        <img src="{% static 'my_app/flags/Australia.png' %}" alt="Country Flag" srcset="">
         <div class="card-content">
             <h1>Australia</h1>
             <p>Courses will be Available soon, so just hang on tight.</p>
@@ -32,7 +33,7 @@
         </div>
     </div>
     <div class="card">
-        <img src="" alt="Country Flag" srcset="">
+        <img src="{% static 'my_app/flags/Malaysia.png' %}" alt="Country Flag" srcset="">
         <div class="card-content">
             <h1>Malaysia</h1>
             <p>Courses will be Available soon, so just hang on tight.</p>
