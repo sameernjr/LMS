@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Urbanist", Helvetica, sans-serif;
 }
 
 /* Logo Styling */
@@ -13,7 +15,7 @@
 }
 
 .navbar-brand img {
-    max-height: 80px;
+    max-height: 70px;
     /* Adjust the height as needed */
 
     /* Optional: Add some padding around the image */
@@ -26,6 +28,7 @@
     justify-content: center;
     margin: 10px;
     background-color: aqua;
+    color: #fff;
 }
 
 /* Responsive Cards Styling  */
