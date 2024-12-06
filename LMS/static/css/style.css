@@ -13,10 +13,19 @@
 }
 
 .navbar-brand img {
-    max-height: 60px;
+    max-height: 80px;
     /* Adjust the height as needed */
-    padding: 5px;
+
     /* Optional: Add some padding around the image */
+}
+
+/* Header Styling */
+
+.index-header {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: aqua;
 }
 
 /* Responsive Cards Styling  */
@@ -30,7 +39,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
-    margin-top: 50px;
+    margin-top: 30px;
     /* padding-left: 70px; */
 }
 
