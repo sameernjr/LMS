@@ -4,5 +4,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.users_view),
+    path('register/', views.users_view),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Register A New User</h1>
+    <form action="/users/register/" method="post">
+        {% csrf_token %}
+        {{ form }}
+
+        <button>Submit</button>
+    </form>
 </body>
 </html>
