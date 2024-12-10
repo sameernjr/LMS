@@ -8,5 +8,6 @@ def users_view(request):
         if form.is_valid():
             form.save()
             return redirect("home:index")
-    form = UserCreationForm()
+    else:
+        form = UserCreationForm()
     return render(request, 'users/users.html', {'form':form})
