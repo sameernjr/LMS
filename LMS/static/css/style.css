@@ -75,3 +75,11 @@ body {
     border-radius: 5px;
     padding: 8px 16px;
 }
+
+/* Register Styling */
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
