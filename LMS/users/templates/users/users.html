@@ -8,17 +8,25 @@
 <h1>Register A New User</h1>
 <form action="/users/register/" method="post">
     {% csrf_token %}
-    {{form.username.label}}
-    {{form.username}}
+    <div class="form-group">
+        {{form.username.label}}
+        {{form.username}}
+    </div>
 
-    {{form.email.label}}
-    {{form.email}}
+    <div class="form-group">
+        {{form.email.label}}
+        {{form.email}}
+    </div>
 
-    {{form.password1.label}}
-    {{form.password1}}
+    <div class="form-group">
+        {{form.password1.label}}
+        {{form.password1}}
+    </div>
 
-    {{form.password2.label}}
-    {{form.password2}}
+    <div class="form-group">
+        {{form.password2.label}}
+        {{form.password2}}
+    </div>
 
     <button>Submit</button>
 </form>
