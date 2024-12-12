@@ -6,4 +6,4 @@ from django import forms
 class CreationUserForm(UserCreationForm):
     class Meta:
         model = User
-        fields = ['Username','email','password1','password2']
+        fields = ['username','email','password1','password2']
