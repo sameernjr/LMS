@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.decorators import user_passes_test
+from django.contrib import messages
+from django.urls import reverse
 from django.contrib.auth import login
 from .forms import CreationUserForm,LoginUserForm
 # Create your views here.
