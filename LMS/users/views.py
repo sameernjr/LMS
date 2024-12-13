@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib import messages
 from django.urls import reverse
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 from .forms import CreationUserForm,LoginUserForm
 # Create your views here.
 
@@ -22,7 +22,7 @@ def users_view(request):
         form = CreationUserForm(request.POST)
         if form.is_valid():
             login(request, form.save())
-            return redirect("home:index")
+            return redirect("users:login")
     else:
         form = CreationUserForm()
     return render(request, 'users/users.html', {'form':form})
@@ -37,3 +37,7 @@ def login_view(request):
     else:
         form = LoginUserForm()
     return render(request, 'users/login.html', {'form':form})
+
+def logout_view(request):
+    logout(request)
+    return redirect("users:login")
