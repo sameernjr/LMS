@@ -6,6 +6,17 @@ from django.contrib.auth import login
 from .forms import CreationUserForm,LoginUserForm
 # Create your views here.
 
+def admin_required(view_func):
+    def wrap(request, *args, **kwargs):
+        if request.user.is_superuser:
+            return view_func(request, *args, **kwargs)
+        else:
+            messages.error(request, "You are not authorized to access this page.")
+            return redirect(reverse('home:index'))
+    return wrap
+
+
+@admin_required
 def users_view(request):
     if request.method == "POST":
         form = CreationUserForm(request.POST)
