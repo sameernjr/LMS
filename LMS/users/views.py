@@ -31,6 +31,7 @@ def login_view(request):
     if request.method == "POST":
         form = LoginUserForm(data=request.POST)
         if form.is_valid():
+            user = form.get_user()
             login(request, form.get_user())
             return redirect("home:index")
     else:
