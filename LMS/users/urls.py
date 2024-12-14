@@ -6,6 +6,7 @@ from . import views
 app_name = 'users'
 
 urlpatterns = [
-    path('register/', views.users_view, name='register'), 
     path('login/', views.login_view, name='login'),
+    path('register/', views.users_view, name='register'), 
+    path('logout/', views.logout_view, name='logout'), 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
