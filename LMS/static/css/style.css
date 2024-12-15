@@ -21,6 +21,8 @@
 
 body {
     background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-container {
@@ -77,6 +79,13 @@ body {
 }
 
 /* Register Styling */
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
 .login-container {
     width: 400px;
     background-color: #fff;
