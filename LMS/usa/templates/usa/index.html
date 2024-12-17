@@ -10,5 +10,6 @@
         {% for x in video %}
         <h3 class="video-title">{{x.title}}</h3>
         <video src="{{x.video.url}}" class="video-player" controls></video>
+        {% endfor %}
     </div>
 {% endblock %}
