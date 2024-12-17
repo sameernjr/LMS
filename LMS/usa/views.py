@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Video, fullsail, oregonstate, coloradostate, saintlouis
+from .models import fullsail, oregonstate, coloradostate, saintlouis
 
 # Create your views here.
 
