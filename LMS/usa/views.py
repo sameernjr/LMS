@@ -4,7 +4,6 @@ from .models import Video, fullsail, oregonstate, coloradostate, saintlouis
 # Create your views here.
 
 def index(request):
-    video=Video.objects.all()
     return render(request, 'usa/index.html',)
 def fullsail(request):
     fullsail=fullsail.objects.all()
