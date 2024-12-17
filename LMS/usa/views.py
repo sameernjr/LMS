@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from .models import Video
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'usa/index.html')
+    video=Video.objects.all()
+    return render(request, 'usa/index.html', {'video': video})
