@@ -5,7 +5,7 @@ from .models import Video, fullsail, oregonstate, coloradostate, saintlouis
 
 def index(request):
     video=Video.objects.all()
-    return render(request, 'usa/index.html', {'video': video})
+    return render(request, 'usa/index.html',)
 def fullsail(request):
     fullsail=fullsail.objects.all()
     return render(request, 'usa/FullSail/courses.html', {'fullsail': fullsail})
