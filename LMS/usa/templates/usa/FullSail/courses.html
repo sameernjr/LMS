@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FULL SAIL Courses</title>
+</head>
+<body>
+    <h1>FULL SAIL COURSES</h1>
+    <hr>
+    <div class="video">
+        {% for x in video %}
+        <h3 class="video-text">{{x.title}}</h3>
+        <video class="video-player" src="{{x.video.url}}" type="video/mp4" controls></video>
+        {% endfor %}
+    </div>
+</body>
+</html>
