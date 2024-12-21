@@ -7,7 +7,7 @@ def index(request):
     return render(request, 'usa/index.html',)
 def fullsail_view(request):
     fullsail_objects=fullsail.objects.all()
-    return render(request, 'usa/FullSail/courses.html', {'fullsail': fullsail})
+    return render(request, 'usa/FullSail/courses.html', {'fullsail_objects': fullsail_objects})
 def coloradostate(request):
     coloradostate_objects=coloradostate.objects.all()
     return render(request, 'usa/ColoradoState/courses.html', {'coloradostate': coloradostate})
