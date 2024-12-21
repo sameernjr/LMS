@@ -5,11 +5,16 @@
 {% endblock %}
 
 {% block content %}
-<div class="index-header">  
+<div class="index-header-usa">  
     <h1>Hello World</h1> 
-    {% for item in fullsail_objects%}
-        <h1>{{ item.title}}</h1>
-        <video src="{{item.video.url}}" type="video/mp4" controls="controls" ></video>
+    {% for course in fullsail_objects%}
+       <li>
+        <h3>{{ course.title }}</h3>
+        <video controls="controls">
+            <source src="{{ course.video.url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+       </li>
     {% endfor %}
 </div>      
 {% endblock %}
