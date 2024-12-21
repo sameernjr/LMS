@@ -7,14 +7,22 @@
     font-family: "Urbanist", Helvetica, sans-serif;
 }
 
+body {
+    background-image: url('/static/images/background/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* Header Styling */
 
 .index-header {
     display: flex;
     justify-content: center;
     margin: 10px;
-    background-color: aqua;
+    background-color: #4169E1;
     color: #fff;
+    border-radius: 10px;
 }
 
 /* Responsive Cards Styling  */
@@ -71,7 +79,7 @@ body {
 
 .card-button {
     display: inline-block;
-    background-color: #3498db;
+    background-color: #4169E1;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;

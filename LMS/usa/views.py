@@ -5,15 +5,15 @@ from .models import fullsail, oregonstate, coloradostate, saintlouis
 
 def index(request):
     return render(request, 'usa/index.html',)
-def fullsail(request):
-    fullsail=fullsail.objects.all()
-    return render(request, 'usa/FullSail/courses.html', {'fullsail': fullsail})
+def fullsail_view(request):
+    fullsail_objects=fullsail.objects.all()
+    return render(request, 'usa/FullSail/courses.html', {'fullsail_objects': fullsail_objects})
 def coloradostate(request):
-    coloradostate=coloradostate.objects.all()
+    coloradostate_objects=coloradostate.objects.all()
     return render(request, 'usa/ColoradoState/courses.html', {'coloradostate': coloradostate})
 def oregonstate(request):
-    oregonstate=oregonstate.objects.all()
+    oregonstate_objects=oregonstate.objects.all()
     return render(request, 'usa/OregonState/courses.html', {'oregonstate': oregonstate})
 def saintlouis(request):
-    saintlouis=saintlouis.objects.all()
+    saintlouis_objects=saintlouis.objects.all()
     return render(request, 'usa/SaintLouis/courses.html', {'saintlouis': saintlouis})

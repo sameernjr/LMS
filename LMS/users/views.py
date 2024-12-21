@@ -17,10 +17,11 @@ def admin_required(view_func):
 
 
 @admin_required
-def users_view(request):
+def registration_view(request):
     if request.method == "POST":
         form = CreationUserForm(request.POST)
         if form.is_valid():
+            form.save()
             login(request, form.save())
             return redirect("users:login")
     else:
