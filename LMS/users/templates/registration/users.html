@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Registration
+{% endblock %}
+
+{% block content %}
+<div class="center-container">
+    <div class="register-container">
+        <h1 class="register-title">Register A New User</h1>
+        <form action="/users/register/">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.username.label }}
+                {{ form.username }}
+            </div>
+            <div class="form-group">
+                {{ form.email.label }}
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                {{ form.password1.label }}
+                {{ form.password1 }}
+            </div>
+            <div class="form-group">
+                {{ form.password2.label }}
+                {{ form.password2 }}
+            </div>
+
+            <button class="reg-btn">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

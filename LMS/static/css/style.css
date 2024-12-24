@@ -7,20 +7,30 @@
     font-family: "Urbanist", Helvetica, sans-serif;
 }
 
+body {
+    background-image: url('/static/images/background/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* Header Styling */
 
 .index-header {
     display: flex;
     justify-content: center;
     margin: 10px;
-    background-color: aqua;
+    background-color: #4169E1;
     color: #fff;
+    border-radius: 10px;
 }
 
 /* Responsive Cards Styling  */
 
 body {
     background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-container {
@@ -69,9 +79,125 @@ body {
 
 .card-button {
     display: inline-block;
-    background-color: #3498db;
+    background-color: #4169E1;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     padding: 8px 16px;
+}
+
+/* Register Styling */
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.login-container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 60vh;
+}
+
+.login-h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Registration Form */
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.register-container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 80vh;
+}
+
+.reg-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.reg-btn:hover {
+    background-color: #2980b9;
+}
+
+/* USA Index Styling */
+
+.card-usa {
+    width: 225px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    height: 60vh;
+}
+
+.card-usa:hover {
+    transform: translateY(-20px);
+}
+
+.card-usa img {
+    width: 225px;
+    height: 120px;
+    object-fit: cover;
 }

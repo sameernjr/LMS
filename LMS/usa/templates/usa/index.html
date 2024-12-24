@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    USA Courses
+{% endblock %}
+{% block content %}
+<div class="index-header">
+    <h1>Choose Your Course</h1>
+</div>
+    <div class="card-container">
+        <div class="card-usa">
+            <img src="{% static 'images/usa/Full_Sail.jpg' %}" alt="Full-Sail" srcset="">
+            <div class="card-content">
+                <h1>Full Sail University</h1>
+                <p>Courses will be Available soon, so just hang on tight.</p>
+                <a href="{% url 'fullsail' %}" class="card-button">View Courses</a>
+            </div>
+        </div>
+        <div class="card-usa">
+            <img src="{% static 'images/usa/colorado_state.jpeg' %}" alt="Colorado State" srcset="">
+            <div class="card-content">
+                <h1>Colorado State University</h1>
+                <p>Courses will be Available soon, so just hang on tight.</p>
+                <a href="#" class="card-button">View Courses</a>
+            </div>
+        </div>
+        <div class="card-usa">
+            <img src="{% static 'images/usa/Oregon_State.jpg' %}" alt="Country Flag" srcset="">
+            <div class="card-content">
+                <h1>Oregon State University</h1>
+                <p>Courses will be Available soon, so just hang on tight.</p>
+                <a href="#" class="card-button">View Courses</a>
+            </div>
+        </div>
+        <div class="card-usa">
+            <img src="{% static 'images/usa/Saint_louis.jpeg' %}" alt="Country Flag" srcset="">
+            <div class="card-content">
+                <h1>Saint Louis University</h1>
+                <p>Courses will be Available soon, so just hang on tight.</p>
+                <a href="#" class="card-button">View Courses</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
