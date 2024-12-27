@@ -20,7 +20,7 @@ def registration_view(request):
     if request.method == "POST":
         form = CreationUserForm(request.POST)
         if form.is_valid():
-            form.save()
+            user=form.save()
             login(request, form.save())
             return redirect("users:login")
     else:
