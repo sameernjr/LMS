@@ -1,1 +1,0 @@
-I embarked on a journey to create a Learning Management System (LMS) purely out of curiosity and the sheer enjoyment of building something impactful. This project is a labor of love, combining my passion for technology and education.
